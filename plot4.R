@@ -34,7 +34,7 @@ plot(date_time, global_power, type = "l",
 plot(date_time, Electricity$Voltage, type = "l", 
      ylab = "Global Active Power", xlab = "datetime")
 ### Plot third graph (Energy Sub Metering by Date/Time)
-plot(date_time, Electricity$Sub.Metering.1, type = "n", ylab = "Energy Sub Metering", xlab = "")
+plot(date_time, Electricity$Sub.Metering.1, type = "1", ylab = "Energy Sub Metering", xlab = "")
         lines(date_time, Electricity$Sub.Metering.2, type = "l", col = "red")
         lines(date_time, Electricity$Sub.Metering.3, type = "l", col = "blue")
 legend("topright", 

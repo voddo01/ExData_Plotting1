@@ -24,7 +24,7 @@ date_time <- lubridate::dmy_hms(paste(Electricity$Date, Electricity$Time, sep = 
 
 ### Create plot and fill in with corresponding lines
 png("plot3.png", width = 480, height = 480)
-plot(date_time, Electricity$Sub.Metering.1, type = "n", ylab = "Energy Sub Metering", xlab = "")
+plot(date_time, Electricity$Sub.Metering.1, type = "1", ylab = "Energy Sub Metering", xlab = "")
 lines(date_time, Electricity$Sub.Metering.2, type = "l", col = "red")
 lines(date_time, Electricity$Sub.Metering.3, type = "l", col = "blue")
 ### Create legend for completed line graph
